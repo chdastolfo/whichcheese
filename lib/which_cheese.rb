@@ -8,7 +8,7 @@ module WhichCheese
 	puts "**************"
 
 	def arr_of_cheeses 
-		chz = CSV.read("/applications/mamp/htdocs/rampup/cheeses.csv")
+		chz = CSV.read("../data/cheeses.csv")
 		puts chz[rand(chz.length)]
 	end
 
