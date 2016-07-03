@@ -1,5 +1,5 @@
 require "which_cheese/version"
-require 'smarter_csv'
+require 'csv'
 
 module WhichCheese
 
@@ -8,7 +8,7 @@ module WhichCheese
 	puts "**************"
 
 	def self.arr_of_cheeses 
-		chz = SmarterCSV.process("./cheeses.csv")
+		chz = CSV.read("./cheeses.csv")
 		puts chz[rand(chz.length)]
 	end
 
