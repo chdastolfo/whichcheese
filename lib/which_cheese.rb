@@ -8,7 +8,7 @@ module WhichCheese
 	puts "**************"
 
 	def self.arr_of_cheeses 
-		chz = CSV.read("https://github.com/chdastolfo/whichcheese/blob/master/data/cheeses.csv")
+		chz = CSV.read("/data/cheeses.csv")
 		puts chz[rand(chz.length)]
 	end
 

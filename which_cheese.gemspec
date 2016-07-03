@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q"Pairs cheeses with alcoholic beverages"
   spec.homepage      = "https://github.com/chdastolfo/whichcheese"
   spec.license       = "MIT"
+  spec.files         = ["/data/cheeses.csv"]
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
