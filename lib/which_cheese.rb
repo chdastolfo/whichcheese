@@ -1,5 +1,6 @@
 require "which_cheese/version"
 require 'csv'
+require 'which_cheese/cheeses'
 
 module WhichCheese
 
@@ -8,7 +9,7 @@ module WhichCheese
 	puts "**************"
 
 	def self.arr_of_cheeses 
-		chz = CSV.read("/data/cheeses.csv")
+		chz = CSV.read("cheeses.csv")
 		puts chz[rand(chz.length)]
 	end
 
