@@ -1,16 +1,16 @@
 require "which_cheese/version"
+require 'csv'
 
 module WhichCheese
-  require 'csv'
 
 	puts "**************"
 	puts "Hi! Here's what adult beverage you should drink and which cheese varieties you should pair it with.\n"
 	puts "**************"
 
-	def arr_of_cheeses 
-		chz = CSV.read("../data/cheeses.csv")
+	def self.arr_of_cheeses 
+		chz = CSV.read("https://github.com/chdastolfo/whichcheese/blob/master/data/cheeses.csv")
 		puts chz[rand(chz.length)]
 	end
 
-	arr_of_cheeses()
+	arr_of_cheeses
 end
