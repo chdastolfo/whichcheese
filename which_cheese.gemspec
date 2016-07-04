@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q"Pairs cheeses with alcoholic beverages"
   spec.homepage      = "https://github.com/chdastolfo/whichcheese"
   spec.license       = "MIT"
-  spec.files         = ["lib/which_cheese.rb", "lib/which_cheese/cheeses.csv"]
+  spec.files         = ["lib/which_cheese/cheeses.csv"]
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "smarter_csv", "~> 1.1.0"
 end

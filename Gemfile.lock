@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    which_cheese (0.3.0)
+    which_cheese (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -21,6 +21,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
+    smarter_csv (1.1.0)
 
 PLATFORMS
   ruby
@@ -29,6 +30,7 @@ DEPENDENCIES
   bundler (~> 1.12)
   rake (~> 10.0)
   rspec (~> 3.0)
+  smarter_csv (~> 1.1.0)
   which_cheese!
 
 BUNDLED WITH
